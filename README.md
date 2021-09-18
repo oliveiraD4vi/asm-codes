@@ -2,7 +2,7 @@
 ## Descrição
 <p>
 
-  Este repositório possui códigos em Assembly, utilizando a extensão ASM. Abaixo pode ser visto como executar os códigos propostos, bem como o uso desses códigos, dependendo das características individuais de cada um. Há também instruções sobre o uso dos códigos escritos na plataforma SASM, utilizada em abundância por conta da facilidade de teste e execução. Os arquivos estão separados por tipo e assunto em seus respectivos diretórios. Nem todos eles possuem comentários descritivos, portanto os nomes de alguns arquivos podem ser mais longos que outros, indicando de forma sintática o propósito do código.
+  Este repositório possui códigos em Assembly, mais especificamente na linguagem de montagem NASM, utilizando a extensão .asm. Abaixo pode ser visto como executar os códigos propostos, bem como o uso desses códigos, dependendo das características individuais de cada um. Há também instruções sobre o uso dos códigos escritos na plataforma SASM, utilizada em abundância por conta da facilidade de teste e execução. Os arquivos estão separados por tipo e assunto em seus respectivos diretórios. Nem todos eles possuem comentários descritivos, portanto os nomes de alguns arquivos podem ser mais longos que outros, indicando de forma sintática o propósito do código.
 
 </p>
 
@@ -20,7 +20,7 @@ Em geral, o ponto de início do programa é o "main".
 <p>No GCC, o NASM pode ser montado utilizando o comando:</p>
 
 ```
-nasm -f elf main.asm
+nasm -f elf [nome-do-arquivo].asm
 ```
 
 ### Linkagem
@@ -38,6 +38,11 @@ gcc -m32 -o [nome-do-executável] [nome-do-arquivo-objeto].o
 ```
 
 ## Uso do SASM
+<p>
+  
+  O SASM é um ambiente de desenvolvimento de código aberto (uma IDE) para as linguagens de montagem NASM, MASM, GAS e FASM. A utilização dessa plataforma facilita a escrita dos códigos por mostrar o estado dos registradores, das flags ativadas em cada operação e das variáveis declaradas no momento da execução com o uso de uma funcionalidade que permite executar o código linha por linha, evitando o trabalho de montar e ligar os arquivos para ver a exeução e proporcionando um entendimento melhor dos comandos. Dessa maneira, temos um aproveitamento maior do estudo. É aconselhável que os códigos em assembly sejam executados no SASM com o intuito de entender o funcionamento e uso dos registradores, especialmente no estudo da FPU - Unidade de Ponto Flutuante, no entanto isso não exclui a importância de saber como montar e ligar o código por linha de comando.
+   
+</p>
 
 ## Printf & Scanf
 

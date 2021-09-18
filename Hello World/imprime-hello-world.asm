@@ -1,5 +1,3 @@
-%include "io.inc"
-
 section .data
         msg db  'Hello, world!',0xa                 ;nossa string lindona
         len equ $ - msg                             ;comprimento da lindona

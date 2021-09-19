@@ -45,5 +45,27 @@ gcc -m32 -o [nome-do-executável] [nome-do-arquivo-objeto].o
 </p>
 
 ## Printf & Scanf
+<p>
+  
+  É possível utilizar as funções printf e scanf das bibliotecas da linguagem c dentro do código NASM, especificando sua importação antes do código com as linhas:
+
+```asm
+extern scanf
+extern printf
+```
+  Para utilizar os códigos e executá-los no terminal é necessário utilizar as funções Printf e Scanf. Porém, de forma didática, é possível utilizar uma biblioteca do SASM, chamada com a linha:
+
+```asm
+%include "io.inc"
+``` 
+  Essa biblioteca utiliza as seguintes linhas de código para receber e imprimir elementos:
+  
+```asm
+GET_UDEC   [tamanho em bytes], eax
+PRINT_UDEC [tamanho em bytes], eax
+``` 
+  Dessa maneira, é possível simplificar o uso de PRINTF e SCANF. No entando, é necessário compreender que utilizar essas funções é a maneira mais correta de realizar esses procedimentos. No link <a href="https://github.com/oliveiraD4vi/asm-codes/blob/master/Printf%20%26%20Scanf/exemplo_printf.asm">exemplo-printf.asm</a> há um exemplo de uso do PRINTF no diretório em questão.
+  
+</p>
 
 ###### end
